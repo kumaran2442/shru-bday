@@ -8,6 +8,9 @@
 </head>
 <body>
 
+    <!-- Starfield -->
+    <canvas id="stars" aria-hidden="true"></canvas>
+
     <!-- Floating Balloons -->
     <div class="balloon-container" aria-hidden="true">
         <span class="balloon" style="--delay:0s;--x:8%">🎈</span>
@@ -22,15 +25,22 @@
         <div class="hero-gif">
             <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGZ4NHY3aGN4aXpweTRrZXM1N3dhMHFqOG1jcmI2b2Jpd3NlYXU0aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/g5R9dok94mrIvplmZd/giphy.gif" alt="Birthday celebration">
         </div>
-        <h1>Happy Birthday,<br>Shruthika Dass! 🎂</h1>
-        <p>Celebrating the strongest bond that survives time, distance, and every fight in between.</p>
+        <div class="name-chip">🎂 June 14 · Special Day 🎂</div>
+        <h1>Happy Birthday,<br><span class="name-highlight">Shruthika Dass!</span></h1>
+        <p id="typewriter"></p>
         <div class="scroll-indicator">↓</div>
     </section>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider wave-1" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/></svg>
+    </div>
 
     <!-- Partners in Crime -->
     <section class="partners-section reveal">
         <div class="photo-frame">
             <img src="images/image.png" alt="Us — Partners in Crime">
+            <div class="frame-glow"></div>
         </div>
         <div class="partners-content">
             <div class="badge">✨ Best Friends Forever ✨</div>
@@ -56,6 +66,11 @@
         </div>
     </section>
 
+    <!-- Wave Divider -->
+    <div class="wave-divider wave-2" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,0 1080,60 1440,30 L1440,60 L0,60 Z"/></svg>
+    </div>
+
     <!-- GIF Celebration Row -->
     <section class="gif-row reveal" aria-label="Celebration GIFs">
         <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHBtNjQydHNyNnQ0OHBuaHkzbXh4cWI4MnJhc2xoaGt3eWljM3A3diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/artj92V8o75VPL7AeQ/giphy.gif" alt="Confetti">
@@ -63,13 +78,18 @@
         <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHBtNjQydHNyNnQ0OHBuaHkzbXh4cWI4MnJhc2xoaGt3eWljM3A3diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/artj92V8o75VPL7AeQ/giphy.gif" alt="Celebration">
     </section>
 
+    <!-- Wave Divider -->
+    <div class="wave-divider wave-1" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/></svg>
+    </div>
+
     <!-- Dream: Government Nurse -->
     <section class="dream-section reveal">
         <div class="dream-content">
             <div class="dream-icon">👩‍⚕️</div>
             <div class="dream-badge">A Birthday Wish For You</div>
             <h2>Future Government Nurse 🏥</h2>
-            <div class="glass dream-card">
+            <div class="glass dream-card shimmer">
                 <p class="dream-quote">
                     "Every great nurse started with a dream — and yours is one of the most beautiful ones I know. The day you walk into that government ward in your white uniform, the world will be a better, kinder place because of you."
                 </p>
@@ -86,6 +106,11 @@
         </div>
     </section>
 
+    <!-- Wave Divider -->
+    <div class="wave-divider wave-2" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,0 1080,60 1440,30 L1440,60 L0,60 Z"/></svg>
+    </div>
+
     <!-- Friendship Quote -->
     <section class="friendship-quote reveal">
         <div class="quote-text">
@@ -97,41 +122,46 @@
         </div>
     </section>
 
+    <!-- Wave Divider -->
+    <div class="wave-divider wave-1" aria-hidden="true">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/></svg>
+    </div>
+
     <!-- Memories Gallery -->
     <section class="gallery reveal">
         <h2>Our Memories 📸</h2>
         <div class="grid">
-            <div class="media-item">
+            <div class="media-item stagger">
                 <img src="images/image.png" alt="Us" loading="lazy">
                 <div class="media-label">Us 🥰</div>
             </div>
-            <div class="media-item">
+            <div class="media-item stagger">
                 <img src="images/WhatsApp Image 2026-06-13 at 8.58.24 PM.jpeg" alt="Memory" loading="lazy">
                 <div class="media-label">Cherished ✨</div>
             </div>
-            <div class="media-item">
+            <div class="media-item stagger">
                 <img src="images/WhatsApp Image 2026-06-13 at 8.59.22 PM.jpeg" alt="Memory" loading="lazy">
                 <div class="media-label">Memories 💖</div>
             </div>
-            <div class="media-item video-item">
+            <div class="media-item video-item stagger">
                 <video controls preload="metadata">
                     <source src="images/WhatsApp Video 2026-06-13 at 8.58.24 PM (1).mp4" type="video/mp4">
                 </video>
                 <div class="media-label">Video 🎬</div>
             </div>
-            <div class="media-item video-item">
+            <div class="media-item video-item stagger">
                 <video controls preload="metadata">
                     <source src="images/WhatsApp Video 2026-06-13 at 8.58.24 PM (2).mp4" type="video/mp4">
                 </video>
                 <div class="media-label">Video 🎬</div>
             </div>
-            <div class="media-item video-item">
+            <div class="media-item video-item stagger">
                 <video controls preload="metadata">
                     <source src="images/WhatsApp Video 2026-06-13 at 8.58.24 PM (3).mp4" type="video/mp4">
                 </video>
                 <div class="media-label">Video 🎬</div>
             </div>
-            <div class="media-item video-item grid-center-last">
+            <div class="media-item video-item grid-center-last stagger">
                 <video controls preload="metadata">
                     <source src="images/WhatsApp Video 2026-06-13 at 8.58.24 PM.mp4" type="video/mp4">
                 </video>
