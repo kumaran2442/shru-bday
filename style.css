@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Space+Grotesk:wght@300;500;700&display=swap');
 
 :root {
-    --primary: #6366f1;
-    --secondary: #a855f7;
-    --accent: #f43f5e;
-    --bg-dark: #0f172a;
-    --bg-card: rgba(30, 41, 59, 0.7);
-    --text-light: #f8fafc;
-    --text-muted: #94a3b8;
-    --shield-gold: #fbbf24;
-    --shield-red: #dc2626;
-    --anime-blue: #38bdf8;
+    --primary: #f39c12; /* Nick Fox Orange */
+    --secondary: #3498db; /* Judy Police Blue */
+    --accent: #e74c3c;
+    --bg-dark: #1a1a2e;
+    --bg-card: rgba(46, 64, 87, 0.7);
+    --text-light: #ecf0f1;
+    --text-muted: #bdc3c7;
+    --shield-gold: #f1c40f;
+    --shield-red: #e74c3c;
+    --anime-blue: #00d2ff;
 }
 
 * {
